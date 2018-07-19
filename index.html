@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title href="index.html">Football Bash</title>
+	<link rel="icon" href="..\static\2.jpg">
+	<link rel="stylesheet" type="text/css" href="..\static\main.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1300, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+
+</head>
+
+
+<body>
+
+	<div id="line">  
+  
+		    		<ul>
+           
+      			<li class="active"><a href="index.html">Home</a></li>
+      			<li><a href="#team">Teams</a></li>
+      			<li><a href="#events">Events</a></li>
+      			<li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+    		<li class="ff">
+    	<form class="navbar-form navbar-left" action="#here">
+     		 <div class="form-group">
+         
+        		<input id="result" type="text" class="form-control" placeholder="Search">
+      
+        </div>
+           <button onclick="startConverting()" type="submit" class="btn btn-default"><i class="fa fa-microphone"> </i></button>
+         <button type="submit" class="btn btn-default"> Submit</i></button>
+      </form>  </li> </ul>
+</div>
+   
+	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+  
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+     
+    </ol>
+
+  
+    <div class="carousel-inner">
+      <div class="item active">
+      
+        <img src="..\static\c2.jpg" alt="" style="width:100%;height:500px;">
+       <div class="carousel-caption">
+        <h2 class="c k" style="font-size: 30px;">anyone who thinks sunshine is happiness</h2>
+        <h1 class="c">has never played FOOTBALL in the rain !!!</h1>
+      </div>
+      </div>
+
+      <div class="item">
+        <img src="..\static\c1.jpg" alt="" style="width:100%;height:500px;">
+      </div>
+    
+      <div class="item">
+        <img src="..\static\c4.jpg" alt="" style="width:100%;height:500px;">
+      </div>
+      <div class="item">
+        <img src="..\static\c5.png" alt="team" style="width:100%;height:500px;">
+      </div>
+    </div>
+</div>
+</div>
+</div>
+<!---------------------------->
+<div id="team">
+<div class="container-fluid text-center bg-black" <br="">
+        <br>
+
+
+          <h2 style="font-size: 50px;">Teams</h2>
+
+          <br>
+          <div class="row text-center">
+            <div class="col-sm-4">
+              <div class="thumbnail xyz">
+                  <img id="loading"src="..\static\t1.jpg" alt="single">
+                  <h3 style="color:#fff ;">Manchester United</h3>
+                  <h5 >  Manchester United Football Club is a professional football club based in Old Trafford, Greater Manchester, England, that competes in the Premier League, the top flight of English football. Nicknamed "the Red Devils", the club was founded as Newton Heath LYR Football Club in 1878, changed its name to Manchester United in 1902 and moved to its current stadium, Old Trafford, in 1910.</h5>
+               
+                  <button type="button" class="btn btn-info" style="background-color: rgb(136, 24, 27)"><a href="" style="text-decoration:none;color:white ">Know More</a></button>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+
+                <img id="loading" src="..\static\t2.jpg" alt="double">
+                <h3 style="color:#fff ;">Real Madrid</h3>
+                <h5 >Real Madrid Club de Fútbol Founded on 6 March 1902 as the Madrid Football Club, the club has traditionally worn a white home kit since inception. The word real is Spanish for "royal" and was bestowed to the club by King Alfonso XIII in 1920 together with the royal crown in the emblem. The team has played its home matches in the 81,044-capacity Santiago Bernabéu Stadium in downtown Madrid since 1947.</h5>
+                
+                <button type="button" class="btn btn-info" style="background-color: rgb(136, 24, 27)"><a href="" style="text-decoration:none; color:white;">Know More</a></button>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+
+                <img id="loading" src="..\static\t3.jpg" alt="img">
+                <h3 style="color:#fff ;">Borussia Dortmund</h3>
+                <h5 >  Ballspielverein Borussia 09 e.V. Dortmund, commonly known as Borussia Dortmund BVB or simply Dortmund, is a German sports club based in Dortmund, North Rhine-Westphalia. The football team is part of a large membership-based sports club with more than 145,000 members, BVB the second largest sports club by membership in Germany. Dortmund plays in the Bundesliga, the top tier of the German football league system.</h5>
+             
+                <button type="button" class="btn btn-info" style="background-color: rgb(136, 24, 27)"><a href="" style="text-decoration:none;
+                  color:white;">Know More</a></button>
+              </div>
+            </div>
+       
+            <div class="col-sm-4">
+              <div class="thumbnail">
+
+                <img id="loading" src="..\static\t44.jpg" alt="img">
+                <h3 style="color:#fff ;">Liverpool</h3>
+                <h5 >  Liverpool Football Club is a professional football club in Liverpool, England, that competes in the Premier League, the top tier of English football. The club has won 5 European Cups, 3 UEFA Cups, 3 UEFA Super Cups, 18 League titles, 7 FA Cups, 8 League Cups, and 15 FA Community Shields.
+                Founded in 1892, the club joined the Football League the following year and has played at Anfield since its formation. </h5>
+             
+                <button type="button" class="btn btn-info" style="background-color:  rgb(39, 106, 30)"><a href="" style="text-decoration:none;
+                  color:white;">Know More</a></button>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+
+                <img id="loading" src="..\static\t5.jpg" alt="img">
+                <h3 style="color:#fff ;">F.C.Barcelona</h3>
+                <h5 >Futbol Club Barcelona known simply as FC Barcelona and colloquially as Barça, is a professional football club based in Barcelona, Catalonia, Spain.Founded in 1899 by a group of Swiss, English and Catalan footballers led by Joan Gamper, the club has become a symbol of Catalan. It is the third most valuable sports team in the world, worth $4.07 billion</h5>
+             
+                <button type="button" class="btn btn-info" style="background-color:  rgb(39, 106, 30)"><a href="" style="text-decoration:none;
+                  color:white;">Know More</a></button>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+
+                <img id="loading" src="..\static\t6.jpg" alt="img">
+                <h3 style="color:#fff ;">Juventus</h3>
+                <h5> Juventus Football Club S.p.A. (from Latin: iuventūs, "youth"; Italian pronunciation: [juˈvɛntus]), colloquially known as Juve (pronounced [ˈjuːve]),[5] is a professional Italian football club in Turin, Piedmont. Founded in 1897 by a group of Torinese students, the club has worn a black and white striped home kit since 1903 and has played home matches in different grounds around its city, the latest being the 41,507-capacity Allianz Stadium. </h5>
+              
+
+                <button type="button" class="btn btn-info" style="background-color:  rgb(39, 106, 30)"><a href="" style="text-decoration:none;
+                  color:white;">Know More</a></button>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="thumbnail">
+
+                <img id="loading" src="..\static\t7.jpg" alt="img">
+                <h3 style="color:#fff ;">Arsenal</h3>
+                <h5>Arsenal Football Club is a professional football club based in Islington, London, England, that plays in the Premier League, the top flight of English football. The club has won 13 League titles, a record 13 FA Cups, two League Cups, the League Centenary Trophy, 15 FA Community Shields, one UEFA Cup Winners' Cup and one Inter-Cities Fairs Cup,record appearance in finals.</h5>
+               
+                <button type="button" class="btn btn-info" style="background-color:  rgb(21, 39, 68)"><a href="" style="text-decoration:none;
+                  color:white;">Know More</a></button>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="thumbnail">
+
+                <img  id="loading" src="..\static\t8.jpg" alt="img">
+                <h3 style="color:#fff ;">Chelsea</h3>
+                <h5>Chelsea Football Club is a professional football club in London, England, that competes in the Premier League. Founded in 1905, the club's home ground since then has been Stamford Bridge.Chelsea won the First Division title in 1955, followed by various cup competitions between 1965 and 1971. The past two decades have seen sustained success, with the club winning 23 trophies since 1997.</h5>
+         
+                <button type="button" class="btn btn-info" style="background-color:  rgb(21, 39, 68)"><a href="" style="text-decoration:none;
+                  color:white;">Know More</a></button>
+              </div>
+            </div>
+            
+            <div class="col-sm-4">
+              <div class="thumbnail">
+
+                <img id="loading" src="..\static\t9.jpg" alt="img">
+                <h3 style="color:#fff ;">F.C.B Munich</h3>
+                <h5 >  Fußball-Club Bayern München e.V., commonly known as FC Bayern München FCB, Bayern Munich, or FC Bayern, is a German sports club based in Munich, Bavaria (Bayern). It is best known for its professional football team, which plays in the Bundesliga, the top tier of the German football league system, and is the most successful club in German football history, having won a record 28 national titles and 18 national cups.</h5>
+        
+               
+                <button type="button" class="btn btn-info" style="background-color:  rgb(21, 39, 68)"><a href="" style="text-decoration:none;
+                  color:white;">Know More</a></button>
+              </div>
+  
+</div>
+<br>
+
+
+
+
+
+<div id="contact">
+
+         <div class="container">
+<h2>Contact Us:</h2>
+<a href="#">
+ <span class="glyphicon glyphicon-envelope" style="font-size:25px"></span></a>
+ <a href="#"><P>FOOTBALLBASH@GMAIL.COM</P>
+          <span class="glyphicon glyphicon-print" style="font-size:25px"></span>
+        </a>
+  <a href="#"><P> 9839493423</P>
+          <span class="glyphicon glyphicon-phone-alt" style="font-size:25px"></span>
+        </a>
+        <a href="#"><P> +91 8553203070</P>
+        <i class="fa fa-facebook-square" style="font-size:25px">
+        </i></a>
+        <a href="#"><p> WWW.FACEBOOK.COM/FOOTBALL-BASH/</p>
+        <i class="fa fa-linkedin-square" style="font-size:25px"></i></a>
+        <a href="">
+        <P>FOOTBALL-BASH-02183H</P></a>
+
+</div>
+</div>
+<script type="text/javascript">
+
+      var r = document.getElementById('result');
+
+      function startConverting () {
+        if('webkitSpeechRecognition' in window){
+          var speechRecognizer = new webkitSpeechRecognition();
+          speechRecognizer.continuous = true;
+          speechRecognizer.interimResults = true;
+          speechRecognizer.lang = 'en-IN';
+          speechRecognizer.start();
+
+          var finalTranscripts = '';
+
+          speechRecognizer.onresult = function(event){
+            var interimTranscripts = '';
+            for(var i = event.resultIndex; i < event.results.length; i++){
+              var transcript = event.results[i][0].transcript;
+              transcript.replace("\n", "<br>");
+              if(event.results[i].isFinal){
+                finalTranscripts += transcript;
+              }else{
+                interimTranscripts += transcript;
+              }
+            }
+            var Speechr = finalTranscripts + interimTranscripts ;
+            r.setAttribute('value',Speechr);
+          };
+          speechRecognizer.onerror = function (event) {
+          };
+        }else{
+          r.innerHTML = 'Your browser is not supported. If google chrome, please upgrade!';
+        }
+      }
+
+      
+
+    </script>
+
+</body>
+</html>
+
+
+
+
+<!-------
+<h1>Developers</h1>
+<br>
+<br>
+<br>
+
+
+        <div class="col-sm-3">
+              <div class="thumbnail">
+
+                <img id="loading" src="..\static\m1.jpg" alt="img">
+                <h3 style="color:#fff ;">Mihir Kumar Jha</h3>
+                <p>usn 1RN15IS048</p>
+               
+                <button type="button" class="btn btn-info" style="background-color:  rgb(21, 39, 68)"><a href="" style="text-decoration:none;
+                  color:white;">Know More</a></button>
+              </div>
+  
+</div>
+      <div class="col-sm-3">
+              <div class="thumbnail">
+
+                <img id="loading" src="..\static\m1.jpg" alt="img">
+                <h3 style="color:#fff ;">Mihir Kumar Jha</h3>
+                <p>usn 1RN15IS048</p>
+               
+                <button type="button" class="btn btn-info" style="background-color:  rgb(21, 39, 68)"><a href="" style="text-decoration:none;
+                  color:white;">Know More</a></button>
+              </div>
+  
+</div>
+
+
+      <div class="col-sm-3">
+              <div class="thumbnail">
+
+                <img id="loading" src="..\static\m1.jpg" alt="img">
+                <h3 style="color:#fff ;">Mihir Kumar Jha</h3>
+                <p>usn 1RN15IS048</p>
+               
+                <button type="button" class="btn btn-info" style="background-color:  rgb(21, 39, 68)"><a href="" style="text-decoration:none;
+                  color:white;">Know More</a></button>
+              </div>
+  
+</div>
+
+      <div class="col-sm-3">
+              <div class="thumbnail">
+
+                <img id="loading" src="..\static\m1.jpg" alt="img">
+                <h3 style="color:#fff ;">Mihir Kumar Jha</h3>
+                <p>usn 1RN15IS048</p>
+               
+                <button type="button" class="btn btn-info" style="background-color:  rgb(21, 39, 68)"><a href="" style="text-decoration:none;
+                  color:white;">Know More</a></button>
+              </div>
+  
+</div>
+---->
